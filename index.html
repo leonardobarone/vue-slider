@@ -20,13 +20,11 @@
         </div>
         <div id="root">
             <div class="contenitore">
-                <i @click="indietro" class="fas fa-chevron-left fa-2x"></i>
+                <i @click="indietro()" class="fas fa-chevron-left fa-2x"></i>
             <div class="contenitore-immagine">
                 <img :src="immagini[indexImmagine]" alt="">
                 <div class="pallini">
-                    <i class="fas fa-circle fa-2x attivo"></i>
-                    <i class="fas fa-circle fa-2x"></i>
-                    <i class="fas fa-circle fa-2x"></i>
+                    <i @click="premiPallino(index)" :class="attivato(index)" v-for="(immagine, index) in immagini"  class="fas fa-circle fa-2x" ></i>
                 </div>
             </div>
                 <i @click="avanti()" class="fas fa-chevron-right fa-2x"></i>

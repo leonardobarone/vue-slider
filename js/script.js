@@ -22,6 +22,17 @@ const app = new Vue({
             if (this.indexImmagine == -1) {
                 this.indexImmagine = this.immagini.length - 1
             }
+        },
+        attivato: function(index) {
+            if (index == this.indexImmagine) {
+                return "attivo"
+            } 
+            return null
+        },
+        premiPallino: function(index)  {
+            if (index !== this.indexImmagine) {
+               this.indexImmagine = index;
+            }
         }
     }
 })
