@@ -4,3 +4,37 @@
     margin: 0px;
     box-sizing: border-box;
 }
+/* font */
+body {
+    font-family: 'Gluten', cursive;
+}
+.titolo {
+    padding: 20px 0px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.contenitore {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.contenitore-immagine {
+    position: relative;
+    width: 50%;
+    margin: 0px 30px;
+}
+.contenitore-immagine img {
+    height: 250px;
+    border: 1px solid black;
+    width: 100%;
+}
+.pallini {
+    position: absolute;
+    color: gray;
+    left: calc(50% - 54px);
+    bottom: 15px;
+}
+.attivo {
+    color: black;
+}
+

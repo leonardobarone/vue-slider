@@ -4,11 +4,34 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- font-awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- google-fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <!-- css -->
         <link rel="stylesheet" href="./css/style.css">
         <title>Vue Slider</title>
     </head>
     <body>
+        <div class="titolo">
+            <h1>carosello</h1>
+        </div>
+        <div id="root">
+            <div class="contenitore">
+                <i @click="indietro" class="fas fa-chevron-left fa-2x"></i>
+            <div class="contenitore-immagine">
+                <img :src="immagini[indexImmagine]" alt="">
+                <div class="pallini">
+                    <i class="fas fa-circle fa-2x attivo"></i>
+                    <i class="fas fa-circle fa-2x"></i>
+                    <i class="fas fa-circle fa-2x"></i>
+                </div>
+            </div>
+                <i @click="avanti()" class="fas fa-chevron-right fa-2x"></i>
+        </div>
+        </div>
         <!-- vue -->
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
         <!-- js -->
