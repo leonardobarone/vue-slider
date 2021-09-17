@@ -18,7 +18,10 @@ const app = new Vue({
             }
         },
         indietro: function() {
-            alert("indietro")
+          this.indexImmagine--
+            if (this.indexImmagine == -1) {
+                this.indexImmagine = this.immagini.length - 1
+            }
         }
     }
 })
